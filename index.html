@@ -44,9 +44,9 @@
     </style>
   </head>
   <body class="space-y-24">
-    <header class="container mx-auto">
-      <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+    <header class="container mx-auto ">
+      <div class="">
+        <div class="flex justify-between items-center flex-col lg:flex-row">
           <div>
             <h1 class="text-4xl md:text-7xl font-extrabold">
               It's good <br />
@@ -78,7 +78,7 @@
             </button>
           </div>
           <div>
-            <img src="images/banner.png" class="w-auto md:max-w-sm rounded-lg" />
+            <img src="images/banner.png" class="w-auto  rounded-lg" />
             <!-- ratings er badge -->
             <div
               class="w-60 bg-white rounded flex justify-center items-center gap-3 drop-shadow-lg p-5 -mt-16"
@@ -170,13 +170,13 @@
         </div>
       </section>
       <!-- super client section -->
-      <section class="flex flex-col lg:flex-row gap-12 items-center justify-center rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+      <section class="flex flex-col lg:flex-row gap-12 items-center justify-center rounded-xl bg-gradient-to-r from-header-btn-grd-start to-header-btn-grd-end px-16 py-24">
         <!-- client container -->
         <div class="flex items-center justify-center lg:pr-28">
             <div class="space-y-5">
                 <h2 class="text-5xl text-white font-extrabold">Meet Our Super Clients</h2>
                 <p class="font-medium text-white">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-                <button class="btn "> Show all </button>
+                <button class="btn bg-gradient-to-r from-header-btn-grd-start to-header-btn-grd-end text-white"> Show all </button>
             </div>
         </div>
         
@@ -271,39 +271,54 @@
         </div>
       </section>
     </main>
-    <footer class="footer p-10 bg-base-200 text-base-content">
-        <nav>
-          <header class="footer-title">Services</header> 
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
-        </nav> 
-        <nav>
-          <header class="footer-title">Company</header> 
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
-        </nav> 
-        <nav>
-          <header class="footer-title">Legal</header> 
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
-        </nav> 
-        <form>
-          <header class="footer-title">Newsletter</header> 
-          <fieldset class="form-control w-80">
-            <label class="label">
-              <span class="label-text">Enter your email address</span>
-            </label> 
-            <div class="join">
-              <input type="text" placeholder="username@site.com" class="input input-bordered join-item" /> 
-              <button class="btn btn-primary join-item">Subscribe</button>
-            </div>
-          </fieldset>
-        </form>
-      </footer>
+    <footer class="px-4 lg:px-48 py-10 bg-base-200">
+        <div class="flex justify-between py-24">
+            <img src="images/cup.png" alt="">
+            <p>
+                <span>Ready to get started?</span>
+                <button class="btn btn-warning ">Get Started</button>
+            </p>
+        </div>
+        <div class="footer p-10  text-base-content">
+            <nav>
+                <header class="footer-title">Services</header> 
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+              </nav> 
+              <nav>
+                <header class="footer-title">Company</header> 
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+              </nav> 
+              <nav>
+                <header class="footer-title">Legal</header> 
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+              </nav> 
+              <form>
+                <header class="footer-title">Newsletter</header> 
+                <fieldset class="form-control w-80">
+                  <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                  </label> 
+                  <div class="join">
+                    <input type="text" placeholder="username@site.com" class=" bg-transparent  border-b-2 border-black py-4" /> 
+                    <button class="btn bg-gradient-to-r from-header-btn-grd-start to-header-btn-grd-end text-white font-extrabold  border-none rounded-full "><i class="fa-solid fa-chevron-right"></i></button>
+                  </div>
+                </fieldset>
+              </form>
+        </div>
+        <div class="footer footer-center p-4  text-base-content">
+            <aside>
+                <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+              </aside>
+        </div>
+   </footer>
+     
   </body>
 </html>
